@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carusel-expertos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--header navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-color-1 sticky-top">
+      <a class="navbar-brand h1 text-light font-weight-bold" href="#">Everyones</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active ">
+            <a class="nav-link text-light" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Especialidades
+                  </a>
+                  <div class="dropdown-menu bg-color-1" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-light" href="busqueda.html">Medicina General</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Cardíologia</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Oftalmologia</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Medicina Interna</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Odontología</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Pediatría</a>
+                    
+                  </div>
+                </li>
+          
+          
+          <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+                  <a class="nav-link text-light" href="quienes_somos.html">Quienes Somos</a>
+          </li>
+          <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Contactenos</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          
+          <button class="btn btn-outline-color-3 my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal">Iniciar Sesión</button>
+        </div>
+      </div>
+    </nav>
+              <!--header navbar-->
+              
+              
+              <!--Hero-->
+              <div class="hero bg-color-2 py-5">
+                <h5 class="text-center text-color-4 font-weight-bold mt-5">Los Mejores Especilastas, En las Mejores Clinicas</h5>
+                <h1 class="text-center text-color-4 font-weight-bold mt-3">Busca Los Servicios Que Necesites</h1>
+              
+              <!--Buscador-->
+                
+                <div class="buscador mt-3  py-5 mx-auto text-center form-inline container">
+                  
+                 
+                 <select name="" placeholder="" id="qDesea" class="form-control form-control-lg w-40">
+                  <option hidden selected>¿Qué Desea?</option>
+                  <option value="">Cita Medica</option>
+                  <option value="">Examenes Medicos</option>
+                </select> 
+                <select name="" id="qCiudad" hidden class="form-control form-control-lg w-25">
+                  <option hidden selected>¿En Cual Ciudad?</option>
+                  <option value="">Caracas</option>
+                  <option value="">Maracay</option>
+                  <option value="">Valencia</option>
+                  <option value="">La Guaira</option>
+                  <option value="">Maracaibo</option>
+                </select>
+                <div class="form-group has-feedback w-40">
+                  <i class="fa fa-search form-control-feedback"></i>
+                  <input type="text" class="form-control form-control-lg espacio-lupa w-100" placeholder="Clinica/Doctor/Especialidad/Zona">
+                </div>
+                    <button class="btn btn-color-1 w-20 btn-lg">Buscar</button>
+                </div>
+                <h6 class="text-center text-color-4 font-weight-bold mb-5"><a href="" class="text-white">Búsqueda Avanzada</a></h6>
+              </div>
+              
+                <!--Buscador-->
+
+              </div>
+              <!--Hero-->
+
+
+
+              <div class="container detalle-producto"><!--Detalle Producto-->
+                <div class="row">
+                  <div class="col-md-8 my-5">
+                    <div class="border">
+                      <img src="img/nurse-2141808_1920.jpg" alt="" srcset="" class="img-fluid">
+                      <div class=" p-2 " >
+                        <h6 class="text-primary  mt-3   mb-3 ">Medicina General</h6>
+                        <h4 class="font-weight-bold my-3">Maria Mendez</h4>
+                        <i class="fa fa-hospital-o"> </i><span class="pl-1">Nombre Clinica</span>
+                        
+                        <i class="fa fa-map-marker "> </i><span class="pl-1">Nombre Ciudad</span>
+                        
+                        <i class="fa fa-map-marker "> </i><span class="pl-1">Dirección Av. Siempre Viva</span>
+                        <i class="fa fa-map-marker "> </i><span class="pl-1 text-right font-weight-bold text-primary">Ver Mapa</span>
+                        
+                        
+                      </div>
+                    </div>
+
+                    
+
+
+              <!--Carousel-->
+              <div class="container-fluid border pt-3">
+                <h5 class="font-weight-bold ">Sus Instalaciones</h5>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner row w-100 mx-auto">
+                    <div class="carousel-item col-md-4 active">
+                      <div class="card">
+                          <img src="img/chair-2589771_1280.jpg" class="card-img-top img-fluid">
+                      </div>
+                    </div>
+                    <div class="carousel-item col-md-4 ">
+                      <div class="card">
+                          <img src="img/laboratory-2815641_1280.jpg" class="card-img-top img-fluid">
+                      </div>
+                    </div>
+                    <div class="carousel-item col-md-4 ">
+                      <div class="card">
+                          <img src="img/surgery-1807541_1280.jpg" class="card-img-top img-fluid">
+                      </div>
+                    </div>
+                    <div class="carousel-item col-md-4 ">
+                      <div class="card">
+                          <img src="img/laboratory-2815641_1280.jpg" class="card-img-top img-fluid">
+                      </div>
+                    </div>
+                    <div class="carousel-item col-md-4 ">
+                      <div class="card">
+                          <img src="img/surgery-1807541_1280.jpg" class="card-img-top img-fluid">
+                      </div>
+                    </div>
+                    <div class="carousel-item col-md-4 ">
+                      <div class="card">
+                          <img src="img/surgery-1807541_1280.jpg" class="card-img-top img-fluid">
+                      </div>
+                    </div>  
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <a class="btn btn-outline-secondary mx-1 prev" href="javascript:void(0)" title="Previous" style="right: 310px!important;
+                        background-color: white;">
+                          <i class="fa fa-lg fa-chevron-left"></i>
+                        </a>
+                        <a class="btn btn-outline-secondary mx-1 next" href="javascript:void(0)" title="Next" style="left: 312px!important;
+                        background-color: white;">
+                          <i class="fa fa-lg fa-chevron-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Carousel-->
+
+
+
+
+
+              <div class="mb-3 card">
+                <div class="card-header detalles-prod-med2">
+                    <ul class="nav nav-justified">
+                        <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-0" class="active nav-link elementos-prod-med2">Descripción</a></li>
+                        <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-1" class="nav-link ">Habilidades</a></li>
+                        <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-2" class="nav-link">Educación</a></li>
+                        <li class="nav-item"><a data-toggle="tab" href="#tab-eg7-3" class="nav-link">Informacion</a></li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab-eg7-0" role="tabpanel">
+                          <h3 class="h5  mb-4 text-primary"><span class="fa fa-align-left mr-3"></span>Descripción</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illum fuga eveniet. Deleniti asperiores, commodi quae ipsum quas est itaque, ipsa, dolore beatae voluptates nemo blanditiis iste eius officia minus.</p>
+              <p>Velit unde aliquam et voluptas reiciendis non sapiente labore, deleniti asperiores blanditiis nihil quia officiis dolor vero iste dolore vel molestiae saepe. Id nisi, consequuntur sunt impedit quidem, vitae mollitia!</p>
+              
+                        </div>
+
+                        <div class="tab-pane" id="tab-eg7-1" role="tabpanel">
+                          <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="fa fa-list-alt  mr-3"></span>Habilidades</h3>
+                      <ul class="list-unstyled m-0 p-0">
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle  mr-2 text-muted"></span><span>Necessitatibus quibusdam facilis</span></li>
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle  mr-2 text-muted"></span><span>Velit unde aliquam et voluptas reiciendis n Velit unde aliquam et voluptas reiciendis non sapiente labore</span></li>
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle  mr-2 text-muted"></span><span>Commodi quae ipsum quas est itaque</span></li>
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle  mr-2 text-muted"></span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></li>
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle  mr-2 text-muted"></span><span>Deleniti asperiores blanditiis nihil quia officiis dolor</span></li>
+                      </ul>
+                        </div>
+
+
+
+                        <div class="tab-pane" id="tab-eg7-2" role="tabpanel">
+                          <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="fa fa-book mr-3"></span>Educación + Experiencia</h3>
+                      <ul class="list-unstyled m-0 p-0">
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle mr-2 text-muted"></span><span>Necessitatibus quibusdam facilis</span></li>
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle mr-2 text-muted"></span><span>Velit unde aliquam et voluptas reiciendis non sapiente labore</span></li>
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle text-muted"></span><span>Commodi quae ipsum quas est itaque</span></li>
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle text-muted"></span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></li>
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle text-muted"></span><span>Deleniti asperiores blanditiis nihil quia officiis dolor</span></li>
+                      </ul>
+                        </div>
+
+
+
+                        <div class="tab-pane" id="tab-eg7-3" role="tabpanel">
+                          <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="fa fa-book mr-3"></span>Mas Información</h3>
+                      <ul class="list-unstyled m-0 p-0">
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle mr-2 text-muted"></span><span>Necessitatibus quibusdam facilis</span></li>
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle mr-2 text-muted"></span><span>Velit unde aliquam et voluptas reiciendis non sapiente labore</span></li>
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle text-muted"></span><span>Commodi quae ipsum quas est itaque</span></li>
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle text-muted"></span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></li>
+                        <li class="d-flex align-items-start mb-2"><span class="fa fa-check-circle text-muted"></span><span>Deleniti asperiores blanditiis nihil quia officiis dolor</span></li>
+                      </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+              
+
+              
+
+
+                    
+
+                    
+
+                    
+                  </div><!--detalle-medico-->
+
+                  <!--Aside-->
+                  <div class="col-md-4 my-5">
+                    <div class="row">
+                      <div class="container-fluid stickyaside">
+                          <div class="col-12 border rounded p-0" style="box-shadow: -2px 6px 10px 0 rgba(0,0,0,.2);">
+                          <div class=" p-3 " >
+                            <h6 class="text-primary  mt-3   mb-3 ">Medicina General</h6>
+                            <h2 class="font-weight-bold my-3">Maria Mendez</h2>
+                            <i class="fa fa-hospital-o"> </i><span class="pl-1">Nombre Clinica</span>
+                            <br>
+                            <i class="fa fa-map-marker "> </i><span class="pl-1">Nombre Ciudad</span>
+                            <br>
+                            <i class="fa fa-map-marker "> </i><span class="pl-1">Dirección Av. Siempre Viva</span>
+                            <i class="fa fa-map-marker "> </i><span class="pl-1 text-right font-weight-bold text-primary">Ver Mapa</span>
+                            
+                            
+                          </div> 
+                          <div class="container-fluid bg-light p-3">
+                            <a href="" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target=".bd-example-modal-lg">Reservar</a>
+                          </div>  
+                          </div>
+                          
+                          
+                        
+                      </div>
+
+
+                      <h3 class="text-center my-3">Otras Recomendaciones</h3>
+
+                      <div class="col-12">
+                        <div class="card">
+                            <img src="img/nurse-2141808_1920.jpg" class="card-img-top img-fluid">
+                          <div class="card-body">
+                              <h4 class="card-title">Dr.Erika Peréz</h4>
+                              <div class="d-flex mb-1">
+                                  <span class="text-muted">Medicina Interna</span>
+                                  <p class="text-primary ml-auto font-weight-bold">$5<small class="text-muted font-weight-normal">/Consulta</small></p>
+                                </div>
+                                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1 w-50">Reservar</a> <a href="#" class="btn btn-success py-2 ml-1 w-50">Detalles</a></p>
+                              
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 my-3">
+                        <div class="card">
+                            <img src="img/nurse-2141808_1920.jpg" class="card-img-top img-fluid">
+                          <div class="card-body">
+                              <h4 class="card-title">Dr.Erika Peréz</h4>
+                              <div class="d-flex mb-1">
+                                  <span class="text-muted">Medicina Interna</span>
+                                  <p class="text-primary ml-auto font-weight-bold">$5<small class="text-muted font-weight-normal">/Consulta</small></p>
+                                </div>
+                                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1 w-50">Reservar</a> <a href="#" class="btn btn-success py-2 ml-1 w-50">Detalles</a></p>
+                              
+                          </div>
+                        </div>
+                      </div>
+                    
+                      
+
+                      
+
+                    </div>
+                  </div><!--Aside-->
+
+                </div>
+              </div><!--Detalle Producto-->
+
+              <!--Medicos Relacionados-->
+              <section class="recomendados" id="">
+                <div class="container">
+          
+                  <div class="row mb-5 justify-content-center">
+                    <div class="col-md-7 text-center">
+                      <h2 class=" mb-2 text-uppercase">Medicos Relacionados</h2>
+                    </div>
+                  </div>
+                  
+                  <ul class="mb-5 pl-0 ">
+                    <li class=" d-block d-sm-flex pb-3 pb-sm-0 align-items-center border">
+                      <a href="#"></a>
+                      <div class="logo">
+                        <img src="img/nurse-2141808_1920.jpg" alt="Image" class="img-fluid">
+                      </div>
+          
+                      <div class=" d-sm-flex w-100 justify-content-between mx-4">
+                        <div class=" w-50 mb-3 mb-sm-0">
+                          <h2>Luisa Lane</h2>
+                          <strong class="text-muted">Pediatría</strong>
+                        </div>
+                        <div class=" mb-3 mb-sm-0  w-25 py-3">
+                          <i class="fa fa-map-marker text-muted"> </i><strong class="text-muted">New York, New York</strong> 
+                        </div>
+                        <div class="py-3">
+                          <span class="badge badge-danger">Medio Tiempo</span>
+                        </div>
+                      </div>
+                      
+                    </li>
+
+                    <li class=" d-block d-sm-flex pb-3 pb-sm-0 align-items-center border">
+                      <a href="#"></a>
+                      <div class="logo">
+                        <img src="img/nurse-2141808_1920.jpg" alt="Image" class="img-fluid">
+                      </div>
+          
+                      <div class=" d-sm-flex w-100 justify-content-between mx-4">
+                        <div class=" w-50 mb-3 mb-sm-0">
+                          <h2>Luisa Lane</h2>
+                          <strong class="text-muted">Pediatría</strong>
+                        </div>
+                        <div class=" mb-3 mb-sm-0  w-25 py-3">
+                          <i class="fa fa-map-marker text-muted"> </i><strong class="text-muted">New York, New York</strong> 
+                        </div>
+                        <div class="py-3">
+                          <span class="badge badge-danger">Medio Tiempo</span>
+                        </div>
+                      </div>
+                      
+                    </li>
+
+                    <li class=" d-block d-sm-flex pb-3 pb-sm-0 align-items-center border">
+                      <a href="#"></a>
+                      <div class="logo">
+                        <img src="img/nurse-2141808_1920.jpg" alt="Image" class="img-fluid">
+                      </div>
+          
+                      <div class=" d-sm-flex w-100 justify-content-between mx-4">
+                        <div class=" w-50 mb-3 mb-sm-0">
+                          <h2>Luisa Lane</h2>
+                          <strong class="text-muted">Pediatría</strong>
+                        </div>
+                        <div class=" mb-3 mb-sm-0  w-25 py-3">
+                          <i class="fa fa-map-marker text-muted"> </i><strong class="text-muted">New York, New York</strong> 
+                        </div>
+                        <div class="py-3">
+                          <span class="badge badge-primary">Tiempo Completo</span>
+                        </div>
+                      </div>
+                      
+                    </li>
+                      
+                  </ul>
+          
+                  
+          
+                </div>
+              </section>
+              <!--Medicos Relacionados-->
+              
+    
+
+              
+
+              
+              
+
+
+              
+
+                
+
+
+              
+              <div class="container-fluid py-5 app-banner bg-color-3"><!--App Banner-->
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="img/image1.png" alt="" srcset="" class="img-fluid">
+                  </div>
+                  <div class="col-md-6 my-md-auto">
+                    <div class="col-12">
+                      <h1 class="text-white text-center text-md-left">Para una Mejor Experiencia</h1>
+                      <h5 class="text-white text-center text-md-left">Descarga Nuestra App</h5>
+                    </div>
+                    
+                    
+                      <div class="col-12 text-center text-md-left">
+                          <img src="img/apple-store_app-store-es.svg" alt="" srcset="" class="img-fluid">
+                          <img src="img/play-store_play-store-es.svg" alt="" srcset="" class="img-fluid">
+                      </div>
+                      
+                    
+                    
+                    
+                  </div>
+                </div>
+              </div><!--App Banner-->
+
+
+
+              <section id="faq" class="wow fadeInUp">
+
+                <div class="container">
+          
+                  <div class="section-header">
+                    <h2 class="text-center mb-5">Preguntas Frecuentes </h2>
+                  </div>
+          
+                  <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <ul id="faq-list">
+          
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="fa fa-minus-circle"></i></a>
+                            <div id="faq1" class="collapse" data-parent="#faq-list">
+                              <p>
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                              </p>
+                            </div>
+                          </li>
+                
+                          <li>
+                            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="fa fa-minus-circle"></i></a>
+                            <div id="faq2" class="collapse" data-parent="#faq-list">
+                              <p>
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                              </p>
+                            </div>
+                          </li>
+                
+                          <li>
+                            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="fa fa-minus-circle"></i></a>
+                            <div id="faq3" class="collapse" data-parent="#faq-list">
+                              <p>
+                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                              </p>
+                            </div>
+                          </li>
+                
+                          <li>
+                            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="fa fa-minus-circle"></i></a>
+                            <div id="faq4" class="collapse" data-parent="#faq-list">
+                              <p>
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                              </p>
+                            </div>
+                          </li>
+                
+                          <li>
+                            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="fa fa-minus-circle"></i></a>
+                            <div id="faq5" class="collapse" data-parent="#faq-list">
+                              <p>
+                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                              </p>
+                            </div>
+                          </li>
+                
+                          <li>
+                            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="fa fa-minus-circle"></i></a>
+                            <div id="faq6" class="collapse" data-parent="#faq-list">
+                              <p>
+                                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                              </p>
+                            </div>
+                          </li>
+                
+                        </ul>
+                    </div>
+                  </div>
+          
+                </div>
+          
+              </section>
+
+              <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <a class="navbar-brand h1 text-light font-weight-bold" href="#">Everyones</a>
+            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Menú</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Inicio</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Acerca</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Contactenos</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Terminos y Condiciones</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Politicas de Privacidad</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Especialidades</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Medicina General</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Pediatría</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Cardiología</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Oftalmología</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Dermatología</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Everyones</strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- #footer -->
+
+
+              
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                            <h1 class="text-center font-weight-bold my-2">Everyones</h1>
+                            <h6 class="text-center mb-3">Ingresa con tus credenciales para administrar tus opciones</h6>
+                            <div class="col-12 form-group bloquedatos py-5">
+                                <label for="usuario" class="text-light">Nombre de Usuario</label>
+                                <input type="text" name="usuario" id="usuario" class="form-control">
+                                <label for="contrasena" class="text-light mt-2">Contraseña</label>
+                                <input type="Contraseña" name="contrasena" id="contrasena" class="form-control">
+                                <button class="btn btn-primary my-3 btn-block font-weight-bold">INGRESAR</button>
+                                <a href="#"><p class="text-center text-light text">Olvide mi Contraseña</p></a>
+                            </div>
+                            <h6 class="text-center">¿Aun no tiene cuenta?</h6>
+                            <a href="#"><h6 class="text-center text-primary" >Registrese aquí.</h6></a>        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+              <!-- Modal -->
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-big modal-lg">
+      <div class="modal-content">
+          <div class="modal-header bg-color-2">
+              <h5 class="modal-title text-white font-weight-bold" id="exampleModalLongTitle">Reserva Con Dra. Maria Mendez</h5>
+              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12"><h6>¿Qué Servicio Desea?</h6></div>
+                  
+                  <div class="col-6">
+                    <div id="sCita" class="border"><p class="text-center pt-3">Cita</p></div>
+                  </div>
+                  <div class="col-6">
+                    <div id="sExamenes" class="border"><p class="text-center pt-3">Examenes</p></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-fluid mt-3">
+                <div class="row">
+                  <div class="col-6"><h6>Fecha</h6></div>
+                  <div class="col-6 text-right"><span><h6 class="">Mas Fechas <i class="fa fa-calendar text-primary"></i></h6></span></div>
+                  <div class="col-4">
+                    <div id="fHoy" class="border"><p class="text-center pt-3">Hoy</p></div>
+                  </div>
+                  <div class="col-4">
+                    <div id="fMañana" class="border"><p class="text-center pt-3">Mañana</p></div>
+                  </div>
+                  <div class="col-4">
+                    <div id="fPasado" class="border"><p class="text-center pt-3">Domingo</p></div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="container-fluid mt-3">
+                <div class="row">
+                  <div class="col-12"><h6>Hora</h6></div>
+                  
+                  <div class="col-2">
+                    <div id="ante" class=""><p class="text-right pt-3 fa fa-lg fa-chevron-left pl-5"></p></div>
+                  </div>
+                  <div class="col-2">
+                    <div id="fHoy" class="border"><p class="text-center pt-3">01:00pm</p></div>
+                  </div>
+                  <div class="col-2">
+                    <div id="fHoy" class="border"><p class="text-center pt-3">02:00pm</p></div>
+                  </div>
+                  <div class="col-2">
+                    <div id="fHoy" class="border"><p class="text-center pt-3">03:00pm</p></div>
+                  </div>
+                  <div class="col-2">
+                    <div id="fHoy" class="border"><p class="text-center pt-3">04:00pm</p></div>
+                  </div>
+                  <div class="col-2">
+                    <div id="siguiente" class=""><p class="text-center pt-3 fa fa-lg fa-chevron-right"></p></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <center>
+                <button type="button" class="btn btn-primary btn-lg">Continuar</button>
+              </center>
+              
+          </div>
+      </div>
+  </div>
+</div>
+
+    <script src="js/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/carusel-producto.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/scripts.js"></script>
+    
+    
+</body>
+</html>
+
+
