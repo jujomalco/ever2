@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" href="lib/chosen_v1.8.7/docsupport/style.css">
+    <link rel="stylesheet" href="lib/chosen_v1.8.7/docsupport/prism.css">
+    <link rel="stylesheet" href="lib/chosen_v1.8.7/chosen.css">-->
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--header navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-color-1 sticky-top">
+      <a class="navbar-brand h1 text-light font-weight-bold" href="#">Everyones</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active ">
+            <a class="nav-link text-light" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Especialidades
+                  </a>
+                  <div class="dropdown-menu bg-color-1" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-light" href="busqueda.html">Medicina General</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Cardíologia</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Oftalmologia</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Medicina Interna</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Odontología</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Pediatría</a>
+                    
+                  </div>
+                </li>
+          
+          
+          <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+                  <a class="nav-link text-light" href="quienes_somos.html">Quienes Somos</a>
+          </li>
+          <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Contactenos</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          
+          <button class="btn btn-outline-color-3 my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal">Iniciar Sesión</button>
+        </div>
+      </div>
+    </nav>
+              <!--header navbar-->
+              
+              
+              <!--Hero-->
+              <div class="hero bg-color-2 py-5">
+                <h5 class="text-center text-color-4 font-weight-bold mt-5">Los Mejores Especilastas, En las Mejores Clinicas</h5>
+                <h1 class="text-center text-color-4 font-weight-bold mt-3">Busca Los Servicios Que Necesites</h1>
+              
+              <!--Buscador-->
+                
+                <div class="buscador mt-3  py-5 mx-auto text-center form-inline container">
+                  
+                 
+                 <select name="" placeholder="" id="qDesea" class="form-control form-control-lg w-40">
+                  <option hidden selected>¿Qué Desea?</option>
+                  <option value="">Cita Medica</option>
+                  <option value="">Examenes Medicos</option>
+                </select> 
+                <select name="" id="qCiudad" hidden class="form-control form-control-lg w-25">
+                  <option hidden selected>¿En Cual Ciudad?</option>
+                  <option value="">Caracas</option>
+                  <option value="">Maracay</option>
+                  <option value="">Valencia</option>
+                  <option value="">La Guaira</option>
+                  <option value="">Maracaibo</option>
+                </select>
+                <div class="form-group has-feedback w-40">
+                  <i class="fa fa-search form-control-feedback"></i>
+                  <input type="text" class="form-control form-control-lg espacio-lupa w-100" placeholder="Clinica/Doctor/Especialidad/Zona">
+                </div>
+                    <button class="btn btn-color-1 w-20 btn-lg">Buscar</button>
+                </div>
+                <h6 class="text-center text-color-4 font-weight-bold mb-5"><a href="" class="text-white">Búsqueda Avanzada</a></h6>
+              </div>
+              
+                <!--Buscador-->
+
+              </div>
+              <!--Hero-->
+
+
+
+              <div class="container-fluid detalle-busqueda bg-color-4"><!--Detalle Busqueda-->
+                <h1 class="pt-5">Resultado de Busqueda</h1>
+                <div class="row p-md-5">
+                  <div class="col-lg-3 bg-white p-5 border">
+                            <h3>Filtros</h3>
+                            <form action="#" class="">
+                                <div class="row">
+                                  <div class="col-12">
+                                    <div class="form-group">
+                                        <select class="selectpicker form-control" data-live-search="true">
+                                            <option option hidden selected>¿Qué Desea?</option>
+                                            <option>Cita Medica</option>
+                                            <option>Examenes Medicos</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                          <select class="selectpicker form-control" data-live-search="true">
+                                            <option option hidden selected>Estado</option>
+                                            <option>Distrito Capital</option>
+                                            <option>Zulia</option>
+                                            <option>Carabobo</option>
+                                          </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <div class="form-group">
+                                        <select class="selectpicker form-control" data-live-search="true">
+                                          <option option hidden selected>Municipio</option>
+                                          <option>Libertador</option>
+                                          <option>Chacao</option>
+                                          <option>Sucre</option>
+                                        </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                    <div class="form-group">
+                                      <select class="selectpicker form-control" data-live-search="true">
+                                        <option option hidden selected>Ciudad</option>
+                                            <option>Caracas</option>
+                                            <option>Maracaibo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-group">
+                                    <select class="selectpicker form-control" data-live-search="true">
+                                          <option option hidden selected>Zona</option>
+                                          <option>Chacao</option>
+                                          <option>El Recreo</option>
+                                      </select>
+                                  </div>
+                                </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                          <select class="selectpicker form-control" data-live-search="true">
+                                            <option option hidden selected>Especialidad</option>
+                                                <option>Especialidad 2</option>
+                                                <option>Especialidad 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <div class="form-group">
+                                        <select class="selectpicker form-control" data-live-search="true">
+                                            <option option hidden selected>Patologías</option>
+                                              <option>Patologia 1</option>
+                                              <option>Patologia 2</option>
+                                              <option>Patologia 3</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                    
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                          <select class="selectpicker form-control" multiple data-live-search="true">
+                                                <option hidden selected>Dias de Atención</option>
+                                                <option>Lunes</option>
+                                                <option>Martes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                      <div class="form-group">
+                                        <select class="selectpicker form-control" multiple data-live-search="true">
+                                              <option hidden selected>Doctor/Clinica</option>
+                                              <option>Clinica Avila</option>
+                                              <option>Doctor Mengueche</option>
+                                          </select>
+                                      </div>
+                                  </div>
+
+                                    
+                                    <div class="col-12">
+                                        <label for="">Rango de Precios:</label>
+                                        <input type="range" id="" readonly="" class="form-control">
+                                    </div>
+                                    
+                                    <div class="col-12 mt-3">
+                                      <button class="btn btn-primary btn-block" type="submit">Buscar</button>
+                                  </div>
+                                </div>
+                            </form>   
+                </div>
+
+                <div class="col-lg-9 bg-color-4 p-5 border">
+                  <div class="container bg-white pt-3 border">
+                      <div class="row align-items-center ">
+                          <div class="col-md-6">
+                              <h4>Listado de Medicos</h4>
+                          </div>
+                          <div class="col-md-6">
+                              <div class=" d-flex justify-content-end form-group">
+                                  <select class="form-control">
+                                      <option data-display="Most Recent">Mas Recientes</option>
+                                      <option value="1">Marketer</option>
+                                      <option value="2">Wordpress </option>
+                                      <option value="4">Designer</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="container bg-white pt-3 border my-3">
+                      <div class="row">
+                    
+                                <div class="col-2">
+                                    <img src="img/nurse-2141808_1920.jpg" alt="" class="img-fluid">
+                                </div>
+
+                                <div class="col-7">
+                                    <a href="job_details.html"><h4>Shany Lam</h4></a>
+                                    <div class="links_locat d-flex align-items-center">
+                                        <div class="px-1">
+                                            <p> <i class="fa fa-map-marker"></i> California, USA</p>
+                                        </div>
+                                        <div class="px-1">
+                                          <p> <i class="fa fa-hospital-o"></i> Clinica Sanatrix</p>
+                                        </div>
+                                        <div class="px-1">
+                                            <p> <i class="fa fa-clock-o"></i> Part-time</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="apply_now">
+                                        <a class="btn btn-outline-primary" href="#"> <i class="fa fa-heart"></i> </a>
+                                        <a href="job_details.html" class="btn btn-primary">Reservar</a>
+                                    </div>
+                                    <div class="date">
+                                        <p>Date line: 31 Jan 2020</p>
+                                    </div>
+                                </div>
+                        </div>   
+                        </div>
+
+                        <div class="container bg-white pt-3 border my-3">
+                            <div class="row">
+                          
+                                      <div class="col-2">
+                                          <img src="img/nurse-2141808_1920.jpg" alt="" class="img-fluid">
+                                      </div>
+      
+                                      <div class="col-7">
+                                          <a href="job_details.html"><h4>Shany Lam</h4></a>
+                                          <div class="links_locat d-flex align-items-center">
+                                            <div class="px-1">
+                                                <p> <i class="fa fa-map-marker"></i> California, USA</p>
+                                            </div>
+                                            <div class="px-1">
+                                              <p> <i class="fa fa-hospital-o"></i> Clinica Sanatrix</p>
+                                            </div>
+                                            <div class="px-1">
+                                                <p> <i class="fa fa-clock-o"></i> Part-time</p>
+                                            </div>
+                                        </div>
+                                      </div>
+      
+                                      <div class="col-3">
+                                          <div class="apply_now">
+                                              <a class="btn btn-outline-primary" href="#"> <i class="fa fa-heart"></i> </a>
+                                              <a href="job_details.html" class="btn btn-primary">Reservar</a>
+                                          </div>
+                                          <div class="date">
+                                              <p>Date line: 31 Jan 2020</p>
+                                          </div>
+                                      </div>
+                              </div>   
+                              </div>
+
+                              <div class="container bg-white pt-3 border my-3">
+                                  <div class="row">
+                                
+                                            <div class="col-2">
+                                                <img src="img/nurse-2141808_1920.jpg" alt="" class="img-fluid">
+                                            </div>
+            
+                                            <div class="col-7">
+                                                <a href="job_details.html"><h4>Shany Lam</h4></a>
+                                                <div class="links_locat d-flex align-items-center">
+                                                  <div class="px-1">
+                                                      <p> <i class="fa fa-map-marker"></i> California, USA</p>
+                                                  </div>
+                                                  <div class="px-1">
+                                                    <p> <i class="fa fa-hospital-o"></i> Clinica Sanatrix</p>
+                                                  </div>
+                                                  <div class="px-1">
+                                                      <p> <i class="fa fa-clock-o"></i> Part-time</p>
+                                                  </div>
+                                              </div>
+                                            </div>
+            
+                                            <div class="col-3">
+                                                <div class="apply_now">
+                                                    <a class="btn btn-outline-primary" href="#"> <i class="fa fa-heart"></i> </a>
+                                                    <a href="job_details.html" class="btn btn-primary">Reservar</a>
+                                                </div>
+                                                <div class="date">
+                                                    <p>Date line: 31 Jan 2020</p>
+                                                </div>
+                                            </div>
+                                    </div>   
+                                    </div>
+
+                                    <div class="container bg-white pt-3 border my-3">
+                                        <div class="row">
+                                      
+                                                  <div class="col-2">
+                                                      <img src="img/nurse-2141808_1920.jpg" alt="" class="img-fluid">
+                                                  </div>
+                  
+                                                  <div class="col-7">
+                                                      <a href="job_details.html"><h4>Shany Lam</h4></a>
+                                                      <div class="links_locat d-flex align-items-center">
+                                                        <div class="px-1">
+                                                            <p> <i class="fa fa-map-marker"></i> California, USA</p>
+                                                        </div>
+                                                        <div class="px-1">
+                                                          <p> <i class="fa fa-hospital-o"></i> Clinica Sanatrix</p>
+                                                        </div>
+                                                        <div class="px-1">
+                                                            <p> <i class="fa fa-clock-o"></i> Part-time</p>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                  
+                                                  <div class="col-3">
+                                                      <div class="apply_now">
+                                                          <a class="btn btn-outline-primary" href="#"> <i class="fa fa-heart"></i> </a>
+                                                          <a href="job_details.html" class="btn btn-primary">Reservar</a>
+                                                      </div>
+                                                      <div class="date">
+                                                          <p>Date line: 31 Jan 2020</p>
+                                                      </div>
+                                                  </div>
+                                          </div>   
+                                          </div>
+
+                                          <div class="container bg-white pt-3 border my-3">
+                                              <div class="row">
+                                            
+                                                        <div class="col-2">
+                                                            <img src="img/nurse-2141808_1920.jpg" alt="" class="img-fluid">
+                                                        </div>
+                        
+                                                        <div class="col-7">
+                                                            <a href="job_details.html"><h4>Shany Lam</h4></a>
+                                                            <div class="links_locat d-flex align-items-center">
+                                                              <div class="px-1">
+                                                                  <p> <i class="fa fa-map-marker"></i> California, USA</p>
+                                                              </div>
+                                                              <div class="px-1">
+                                                                <p> <i class="fa fa-hospital-o"></i> Clinica Sanatrix</p>
+                                                              </div>
+                                                              <div class="px-1">
+                                                                  <p> <i class="fa fa-clock-o"></i> Part-time</p>
+                                                              </div>
+                                                          </div>
+                                                        </div>
+                        
+                                                        <div class="col-3">
+                                                            <div class="apply_now">
+                                                                <a class="btn btn-outline-primary" href="#"> <i class="fa fa-heart"></i> </a>
+                                                                <a href="job_details.html" class="btn btn-primary">Reservar</a>
+                                                            </div>
+                                                            <div class="date">
+                                                                <p>Date line: 31 Jan 2020</p>
+                                                            </div>
+                                                        </div>
+                                                </div>   
+                                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      </div>
+
+                    </div>
+                  
+
+                </div>
+
+                </div>
+                
+              </div><!--Detalle Busqueda-->
+
+              <!--Medicos Relacionados-->
+              <section class="recomendados" id="">
+                <div class="container">
+          
+                  <div class="row mb-5 justify-content-center">
+                    <div class="col-md-7 text-center">
+                      <h2 class=" mb-2 text-uppercase">Medicos Relacionados</h2>
+                    </div>
+                  </div>
+                  
+                  <ul class="mb-5 pl-0 ">
+                    <li class=" d-block d-sm-flex pb-3 pb-sm-0 align-items-center border">
+                      <a href="#"></a>
+                      <div class="logo">
+                        <img src="img/nurse-2141808_1920.jpg" alt="Image" class="img-fluid">
+                      </div>
+          
+                      <div class=" d-sm-flex w-100 justify-content-between mx-4">
+                        <div class=" w-50 mb-3 mb-sm-0">
+                          <h2>Luisa Lane</h2>
+                          <strong class="text-muted">Pediatría</strong>
+                        </div>
+                        <div class=" mb-3 mb-sm-0  w-25 py-3">
+                          <i class="fa fa-map-marker text-muted"> </i><strong class="text-muted">New York, New York</strong> 
+                        </div>
+                        <div class="py-3">
+                          <span class="badge badge-danger">Medio Tiempo</span>
+                        </div>
+                      </div>
+                      
+                    </li>
+
+                    <li class=" d-block d-sm-flex pb-3 pb-sm-0 align-items-center border">
+                      <a href="#"></a>
+                      <div class="logo">
+                        <img src="img/nurse-2141808_1920.jpg" alt="Image" class="img-fluid">
+                      </div>
+          
+                      <div class=" d-sm-flex w-100 justify-content-between mx-4">
+                        <div class=" w-50 mb-3 mb-sm-0">
+                          <h2>Luisa Lane</h2>
+                          <strong class="text-muted">Pediatría</strong>
+                        </div>
+                        <div class=" mb-3 mb-sm-0  w-25 py-3">
+                          <i class="fa fa-map-marker text-muted"> </i><strong class="text-muted">New York, New York</strong> 
+                        </div>
+                        <div class="py-3">
+                          <span class="badge badge-danger">Medio Tiempo</span>
+                        </div>
+                      </div>
+                      
+                    </li>
+
+                    <li class=" d-block d-sm-flex pb-3 pb-sm-0 align-items-center border">
+                      <a href="#"></a>
+                      <div class="logo">
+                        <img src="img/nurse-2141808_1920.jpg" alt="Image" class="img-fluid">
+                      </div>
+          
+                      <div class=" d-sm-flex w-100 justify-content-between mx-4">
+                        <div class=" w-50 mb-3 mb-sm-0">
+                          <h2>Luisa Lane</h2>
+                          <strong class="text-muted">Pediatría</strong>
+                        </div>
+                        <div class=" mb-3 mb-sm-0  w-25 py-3">
+                          <i class="fa fa-map-marker text-muted"> </i><strong class="text-muted">New York, New York</strong> 
+                        </div>
+                        <div class="py-3">
+                          <span class="badge badge-primary">Tiempo Completo</span>
+                        </div>
+                      </div>
+                      
+                    </li>
+                      
+                  </ul>
+          
+                  
+          
+                </div>
+              </section>
+              <!--Medicos Relacionados-->
+              
+    
+
+              
+
+              
+              
+
+
+              
+
+                
+
+
+              
+              <div class="container-fluid py-5 app-banner bg-color-3"><!--App Banner-->
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="img/image1.png" alt="" srcset="" class="img-fluid">
+                  </div>
+                  <div class="col-md-6 my-md-auto">
+                    <div class="col-12">
+                      <h1 class="text-white text-center text-md-left">Para una Mejor Experiencia</h1>
+                      <h5 class="text-white text-center text-md-left">Descarga Nuestra App</h5>
+                    </div>
+                    
+                    
+                      <div class="col-12 text-center text-md-left">
+                          <img src="img/apple-store_app-store-es.svg" alt="" srcset="" class="img-fluid">
+                          <img src="img/play-store_play-store-es.svg" alt="" srcset="" class="img-fluid">
+                      </div>
+                      
+                    
+                    
+                    
+                  </div>
+                </div>
+              </div><!--App Banner-->
+
+
+
+              <section id="faq" class="wow fadeInUp">
+
+                <div class="container">
+          
+                  <div class="section-header">
+                    <h2 class="text-center mb-5">Preguntas Frecuentes </h2>
+                  </div>
+          
+                  <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <ul id="faq-list">
+          
+                          <li>
+                            <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="fa fa-minus-circle"></i></a>
+                            <div id="faq1" class="collapse" data-parent="#faq-list">
+                              <p>
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                              </p>
+                            </div>
+                          </li>
+                
+                          <li>
+                            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="fa fa-minus-circle"></i></a>
+                            <div id="faq2" class="collapse" data-parent="#faq-list">
+                              <p>
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                              </p>
+                            </div>
+                          </li>
+                
+                          <li>
+                            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="fa fa-minus-circle"></i></a>
+                            <div id="faq3" class="collapse" data-parent="#faq-list">
+                              <p>
+                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                              </p>
+                            </div>
+                          </li>
+                
+                          <li>
+                            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="fa fa-minus-circle"></i></a>
+                            <div id="faq4" class="collapse" data-parent="#faq-list">
+                              <p>
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                              </p>
+                            </div>
+                          </li>
+                
+                          <li>
+                            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="fa fa-minus-circle"></i></a>
+                            <div id="faq5" class="collapse" data-parent="#faq-list">
+                              <p>
+                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                              </p>
+                            </div>
+                          </li>
+                
+                          <li>
+                            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="fa fa-minus-circle"></i></a>
+                            <div id="faq6" class="collapse" data-parent="#faq-list">
+                              <p>
+                                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                              </p>
+                            </div>
+                          </li>
+                
+                        </ul>
+                    </div>
+                  </div>
+          
+                </div>
+          
+              </section>
+
+              <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <a class="navbar-brand h1 text-light font-weight-bold" href="#">Everyones</a>
+            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Menú</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Inicio</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Acerca</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Contactenos</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Terminos y Condiciones</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Politicas de Privacidad</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Especialidades</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Medicina General</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Pediatría</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Cardiología</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Oftalmología</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Dermatología</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Everyones</strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- #footer -->
+
+
+              
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                            <h1 class="text-center font-weight-bold my-2">Everyones</h1>
+                            <h6 class="text-center mb-3">Ingresa con tus credenciales para administrar tus opciones</h6>
+                            <div class="col-12 form-group bloquedatos py-5">
+                                <label for="usuario" class="text-light">Nombre de Usuario</label>
+                                <input type="text" name="usuario" id="usuario" class="form-control">
+                                <label for="contrasena" class="text-light mt-2">Contraseña</label>
+                                <input type="Contraseña" name="contrasena" id="contrasena" class="form-control">
+                                <button class="btn btn-primary my-3 btn-block font-weight-bold">INGRESAR</button>
+                                <a href="#"><p class="text-center text-light text">Olvide mi Contraseña</p></a>
+                            </div>
+                            <h6 class="text-center">¿Aun no tiene cuenta?</h6>
+                            <a href="#"><h6 class="text-center text-primary" >Registrese aquí.</h6></a>        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+              <!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title mx-auto" id="exampleModalLongTitle">Reserva Con Los Mejores</h5>
+                
+            </div>
+            <div class="modal-body">
+              <div class="">
+                  <p class="text-center"><label for="nombre" class="font-weight-bold">Nombre</label></p>
+                  <input type="text" name="nombre" id="nombre" class="form-control">
+              </div>
+              <div class="">
+                  <p class="text-center"><label for="apellido" class="font-weight-bold">Apellido</label></p>
+                  <input type="text" name="apellido" id="apellido" class="form-control">
+              </div>
+              <div class="">
+                  <p class="text-center"><label for="cedula" class="font-weight-bold">Cédula</label></p>
+                  <input type="number" name="cedula" id="cedula" class="form-control">
+              </div>
+              <div class="">
+                  <p class="text-center"><label for="email" class="font-weight-bold">Email</label></p>
+                  <input type="email" name="email" id="email" class="form-control">
+              </div>
+              <div class="">
+                  <p class="text-center"><label for="fReserva" class="font-weight-bold">Fecha de Reserva</label></p>
+                  <input type="date" name="fReserva" id="fReserva" class="form-control">
+              </div>
+              <center class="mt-3">
+                <input type="submit" value="Continuar" class="btn btn-primary mx-auto">
+              </center>
+              
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!--
+    <script src="lib/chosen_v1.8.7/docsupport/jquery-3.2.1.min.js"></script>
+    <script src="lib/chosen_v1.8.7/chosen.jquery.js"></script>
+    <script src="lib/chosen_v1.8.7/docsupport/prism.js"></script>
+    <script src="lib/chosen_v1.8.7/docsupport/prism.js"></script>
+    <script src="lib/chosen_v1.8.7/docsupport/init.js"></script>-->
+    <script src="js/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+      
+    </script>
+    
+</body>
+</html>
+
+

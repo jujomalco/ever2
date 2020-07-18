@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--header navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-color-1 sticky-top">
+      <a class="navbar-brand h1 text-light font-weight-bold" href="#">Everyones</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active ">
+            <a class="nav-link text-light" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Especialidades
+                  </a>
+                  <div class="dropdown-menu bg-color-1" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-light" href="busqueda.html">Medicina General</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Cardíologia</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Oftalmologia</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Medicina Interna</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Odontología</a>
+                    <a class="dropdown-item text-light" href="busqueda.html">Pediatría</a>
+                    
+                  </div>
+                </li>
+          
+          
+          <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+                  <a class="nav-link text-light" href="quienes_somos.html">Quienes Somos</a>
+          </li>
+          <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Contactenos</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          
+          <button class="btn btn-outline-color-3 my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal">Iniciar Sesión</button>
+        </div>
+      </div>
+    </nav>
+      <!--header navbar-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                                <h1 class="text-center font-weight-bold my-2">Everyones</h1>
+                                <h6 class="text-center mb-3">Ingresa con tus credenciales para administrar tus opciones</h6>
+                                <div class="col-12 form-group bloquedatos py-5">
+                                    <label for="usuario" class="text-light">Nombre de Usuario</label>
+                                    <input type="text" name="usuario" id="usuario" class="form-control">
+                                    <label for="contrasena" class="text-light mt-2">Contraseña</label>
+                                    <input type="Contraseña" name="contrasena" id="contrasena" class="form-control">
+                                    <button class="btn btn-primary my-3 btn-block font-weight-bold">INGRESAR</button>
+                                    <a href="#"><p class="text-center text-light text">Olvide mi Contraseña</p></a>
+                                </div>
+                                <h6 class="text-center">¿Aun no tiene cuenta?</h6>
+                                <a href="#"><h6 class="text-center text-primary" >Registrese aquí.</h6></a>        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!--welcome-->
+            <div class="container-fluid welcome">
+                <div class="row">
+                    <div class="col-lg-3 d-lg-block d-none p-5">
+                      <div class="contenedor-enfermero ">
+                        <img src="img/operation-540597_1280.jpg" class="img-fluid imagen-enfermero" alt="" srcset="">
+                      </div>
+                    </div>
+                    <div class="col-lg-9 bg-color-2 p-5 contenedor-texto-enfermero">
+                        <div class="p-5 text-white">
+                            <h6 class="text-white font-weight-bold">Quienes Somos</h6>
+                            <h1 class="text-white font-weight-bold">Bienvenidos a Everyones</h1>
+                            <p class="text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque at odit alias laborum perspiciatis autem aut quod laboriosam nostrum reprehenderit corrupti, modi dolore possimus mollitia sit sed minus nisi. Consectetur error deserunt iste tempora nisi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo autem facilis magni nemo libero perspiciatis cumque deleniti pariatur consequuntur maxime esse incidunt blanditiis ullam commodi itaque, reiciendis nesciunt quae sunt dignissimos? Nisi, error blanditiis?</p>
+                            <ul class="p-0">
+                                <li><i class="fa fa-check pr-3"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, eius.</li>
+                                <li><i class="fa fa-check pr-3"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, eius.</li>
+                                <li><i class="fa fa-check pr-3"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, eius.</li>
+                            </ul>
+                            <a href="" class="btn btn-color-1 text-white">Buscar Servicios</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--welcome-->
+            <!--Servicios-->
+            <div class="container-fluid p-5 servicios bg-color-4">
+              
+              <div class="row">
+                <div class="col-12 p-5">
+                  <h1 class="text-center font-weight-bold">Nuestros Servicios</h1>
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius maiores officia nesciunt quos dolor nam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolore nesciunt cupiditate blanditiis magni saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut delectus exercitationem sint iusto molestiae omnis!</p>
+                </div>
+
+                <div class="col-md-4 my-3 card-q">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon-services">
+                      <i class="fa fa-calendar-plus-o fa-fw text-center" aria-hidden="true" title="Copy to use calendar-plus-o"></i>
+                    </div> 
+                      <div class="card-title">
+                        <h2 class="text-center font-weight-bold">Medicina General</h2>
+                      </div>
+                      <div class="card-text text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, odit sequi accusantium laudantium corrupti pariatur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, error.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 my-3 card-q">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon-services">
+                        <i class="fa fa-heartbeat fa-fw text-center" aria-hidden="true" title="Copy to use calendar-plus-o"></i>
+                      </div>  
+                      <div class="card-title">
+                        <h2 class="text-center font-weight-bold">Cardíologia</h2>
+                      </div>
+                      <div class="card-text text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, sequi modi doloremque repellat animi ipsam.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, error.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 my-3 card-q">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon-services">
+                        <i class="fa fa-eye fa-fw text-center" aria-hidden="true" title="Copy to use calendar-plus-o"></i>
+                      </div> 
+                      <div class="card-title">
+                        <h2 class="text-center font-weight-bold">Oftalmologia</h2>
+                      </div>
+                      <div class="card-text text-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem in, magnam beatae rerum consequuntur!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, error.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 my-3 card-q">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon-services">
+                        <i class="fa fa-hospital-o fa-fw text-center" aria-hidden="true" title="Copy to use calendar-plus-o"></i>
+                      </div> 
+                      <div class="card-title">
+                        <h2 class="text-center font-weight-bold">Medicina Interna</h2>
+                      </div>
+                      <div class="card-text text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint molestias aliquam esse sequi sunt.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, error.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 my-3 card-q">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon-services">
+                        <i class="fa fa-smile-o fa-fw text-center" aria-hidden="true" title="Copy to use calendar-plus-o"></i>
+                      </div> 
+                      <div class="card-title">
+                        <h2 class="text-center font-weight-bold">Odontología</h2>
+                      </div>
+                      <div class="card-text text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quas non magnam voluptas porro nesciunt.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, error.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 my-3 card-q">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon-services">
+                        <i class="fa fa-user-md fa-fw text-center" aria-hidden="true" title="Copy to use calendar-plus-o"></i>
+                      </div> 
+                      <div class="card-title">
+                        <h2 class="text-center font-weight-bold">Pediatría</h2>
+                      </div>
+                      <div class="card-text text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quas non magnam voluptas porro nesciunt.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, error.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <!--Servicios-->
+
+            <!--Mision-vision-->
+
+            <div class="mision container-fluid">
+              <div class="row">
+                <div class="col-md-6 mision-bg">
+
+                </div>
+                <div class="col-md-6 bg-color-2 p-5">
+                  <h1 class="text-center text-white font-weight-bold">Nuestra Misión</h1>
+                  <p class="text-center text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate cum eius iusto placeat saepe nostrum in temporibus quaerat inventore id. Molestiae vel at molestias dolor dolorum libero eos voluptates possimus.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quam, asperiores illum ipsum inventore nemo et blanditiis officiis libero totam illo dicta ipsam ut quos corporis laborum veritatis excepturi ratione?</p>
+                </div>
+
+                <div class="col-md-6 bg-color-2 p-5">
+                  <h1 class="text-center text-white font-weight-bold">Visión</h1>
+                  <p class="text-center text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate cum eius iusto placeat saepe nostrum in temporibus quaerat inventore id. Molestiae vel at molestias dolor dolorum libero eos voluptates possimus.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quam, asperiores illum ipsum inventore nemo et blanditiis officiis libero totam illo dicta ipsam ut quos corporis laborum veritatis excepturi ratione?</p>
+                </div>
+                <div class="col-md-6 vision-bg">
+
+                </div>
+              </div>
+            </div><!--Mision-vision-->
+
+
+            <div class="container-fluid py-5 app-banner bg-color-4"><!--App Banner-->
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="img/image1.png" alt="" srcset="" class="img-fluid">
+                </div>
+                <div class="col-md-6 my-md-auto">
+                  <div class="col-12">
+                    <h1 class=" text-center text-md-left my-3 font-weight-bold">Tus Reservas Al Instante</h1>
+                    <h5 class=" text-center text-md-left my-4">Con Everyones podrás solicitar a los mejores especialistas medicos de forma fácil y segura</h5>
+                    <h5 class="text-center text-md-left my-5">Descarga Nuestra App</h5>
+                  </div>
+                  
+                  
+                    <div class="col-12 text-center text-md-left">
+                        <img src="img/apple-store_app-store-es.svg" alt="" srcset="" class="img-fluid">
+                        <img src="img/play-store_play-store-es.svg" alt="" srcset="" class="img-fluid">
+                    </div>
+                    
+                  
+                  
+                  
+                </div>
+              </div>
+            </div><!--App Banner-->
+
+
+            <!--nuestro equipo-->
+            <div class="container-fluid bg-color-2">
+              <div class="row">
+                <div class="col-12 text-center text-white font-weight-bold p-3">
+                  <h3>Nuestro Equipo</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum doloribus et fuga vitae nobis beatae. Optio inventore ratione esse! Ipsum?</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="container-fluid my-5 px-5">
+              <div class="row">
+
+                <div class="col-md-4">
+                  <img src="img/person_5.jpg" class="img-fluid" alt="" srcset="">
+                  <h4>Nombre Persona</h4>
+                  <h5 style="color:#2e279d;">Cargo</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, saepe! Fuga fugiat quasi enim iste modi in quae, expedita pariatur.</p>
+                </div>
+
+                <div class="col-md-4">
+                  <img src="img/person_5.jpg" class="img-fluid" alt="" srcset="">
+                  <h4>Nombre Persona</h4>
+                  <h5 style="color:#2e279d;">Cargo</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, saepe! Fuga fugiat quasi enim iste modi in quae, expedita pariatur.</p>
+                </div>
+
+                <div class="col-md-4">
+                  <img src="img/person_5.jpg" class="img-fluid" alt="" srcset="">
+                  <h4>Nombre Persona</h4>
+                  <h5 style="color:#2e279d;">Cargo</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, saepe! Fuga fugiat quasi enim iste modi in quae, expedita pariatur.</p>
+                </div>
+                
+              </div>
+            </div><!--nuestro equipo-->
+
+
+            
+
+            
+
+
+
+
+
+
+
+
+
+            
+            
+
+
+                          <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <a class="navbar-brand h1 text-light font-weight-bold" href="#">Everyones</a>
+            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Menú</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Inicio</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Acerca</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Contactenos</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Terminos y Condiciones</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Politicas de Privacidad</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Especialidades</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Medicina General</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Pediatría</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Cardiología</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Oftalmología</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Dermatología</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Everyones</strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- #footer -->
+
+
+        
+            <script src="js/jquery.slim.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/slider.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="js/scripts.js"></script>
+            
+        </body>
+        </html>
+        
+        
+        

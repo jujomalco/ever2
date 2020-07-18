@@ -1,0 +1,54 @@
+.prev{
+  bottom: 100px;
+    position: relative;
+    right: 345px;
+}
+.next{
+  bottom: 100px;
+    position: relative;
+    left: 345px;
+}
+.detalles-prod-med {
+  background-color: #fff;
+  color: #3d4149;
+  border-bottom: 1px solid #e4e4e4;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  z-index: 10;
+  display: flex;
+}
+
+.elementos-prod-med {
+  color: #4d80e4;
+  border-bottom: .25rem solid #4d80e4;
+  font-weight: bold;
+}
+
+._1ui3f {
+  text-align: center;
+  white-space: nowrap;
+  padding: 1rem;
+  display: block;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+._1ui3f, ._2EnG- {
+  text-decoration: none;
+}
+
+@media (min-width: 576px){
+  .modal-big {
+    max-width: 500px;
+    margin: 1.75rem auto;
+}
+}
+
+@media (min-width: 992px){
+  .modal-big  {
+    max-width: 800px!important;
+}
+}
+  
