@@ -19,8 +19,25 @@
   z-index: 10;
   display: flex;
 }
+.detalles-prod-med2 {
+  background-color: #fff;
+  color: #3d4149;
+  border-bottom: 1px solid #e4e4e4;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  z-index: 10;
+ /* display: flex;*/
+ font-weight: bold;
+}
 
 .elementos-prod-med {
+  color: #4d80e4;
+  border-bottom: .25rem solid #4d80e4;
+  font-weight: bold;
+}
+.elementos-prod-med2 {
   color: #4d80e4;
   border-bottom: .25rem solid #4d80e4;
   font-weight: bold;
@@ -52,3 +69,11 @@
 }
 }
   
+.stickyaside{
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  z-index: 10;
+  background-color: #fff;
+}
