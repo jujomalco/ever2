@@ -21,7 +21,7 @@
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mx-auto">
+                  <ul class="navbar-nav mx-auto ">
                     <li class="nav-item active ">
                       <a class="nav-link text-light" href="#">Inicio <span class="sr-only">(current)</span></a>
                     </li>
@@ -41,9 +41,9 @@
                           </li>
                     
                     
-                    <li class="nav-item">
+                   <!--<li class="nav-item">
                             <a class="nav-link text-light" href="#">Blog</a>
-                    </li>
+                    </li>--> 
                     <li class="nav-item">
                             <a class="nav-link text-light" href="quienes_somos.html">Quienes Somos</a>
                     </li>
@@ -54,7 +54,7 @@
                     <li class="nav-item dropdown">
                   </ul>
                   <div class="form-inline my-2 my-lg-0">
-                    
+                    <a href="#" class=" text-white px-2" data-toggle="modal" data-target="#modalRegistrate">Registrate</a>
                     <button class="btn btn-outline-color-3 my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal">Iniciar Sesión</button>
                   </div>
                 </div>
@@ -63,13 +63,49 @@
               
               
               <!--Hero-->
-              <div class="hero bg-color-2 py-5">
-                <h5 class="text-center text-color-4 font-weight-bold mt-5">Los Mejores Especilastas, En las Mejores Clinicas</h5>
+              <div class="container-fluid ">
+                <div class="row">
+                  <div class="col-md-2 d-none d-md-block border-bottom bloque-experto">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-4 p-2 mt-3">
+                          <img src="img/nurse-2141808_1920.jpg" alt="" class="" srcset="" height="64" width="64">
+                        </div>
+                        <div class="col-8">
+                          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <a href="" class="font-weight-bold">Leer Más</a>
+                        </div>
+
+                        <div class="col-12"><hr></div>
+
+                        <div class="col-4 p-2 mt-3">
+                          <img src="img/nurse-2141808_1920.jpg" alt="" class="" srcset="" height="64" width="64">
+                        </div>
+                        <div class="col-8 ">
+                          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <a href="" class="font-weight-bold">Leer Más</a>
+                        </div>
+
+                        <div class="col-12"><hr></div>
+
+                        <div class="col-4 p-2 mt-3">
+                          <img src="img/nurse-2141808_1920.jpg" alt="" class="" srcset="" height="64" width="64">
+                        </div>
+                        <div class="col-8 ">
+                          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <a href="" class="font-weight-bold">Leer Más</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-12 bg-color-fondo border-bottom py-1">
+                    <h5 class="text-center text-color-4 font-weight-bold mt-5">Los Mejores Especilastas, En las Mejores Clinicas</h5>
                 <h1 class="text-center text-color-4 font-weight-bold mt-3">Busca Los Servicios Que Necesites</h1>
               
               <!--Buscador-->
                 
-                <div class="buscador mt-3  py-5 mx-auto text-center form-inline container">
+                <div class="buscador mt-3  p-5 mx-auto text-center form-inline container">
                   
                  
                  <select name="" placeholder="" id="qDesea" class="form-control form-control-lg w-40">
@@ -87,16 +123,53 @@
                 </select>
                 <div class="form-group has-feedback w-40">
                   <i class="fa fa-search form-control-feedback"></i>
-                  <input type="text" class="form-control form-control-lg espacio-lupa w-100" placeholder="Clinica/Doctor/Especialidad/Zona">
+                  <input type="text" class="form-control form-control-lg espacio-lupa w-100" placeholder="Clinica/Doctor/Especialidad">
                 </div>
                     <button class="btn btn-color-1 w-20 btn-lg">Buscar</button>
                 </div>
                 <h6 class="text-center text-color-4 font-weight-bold mb-5"><a href="" class="text-white">Búsqueda Avanzada</a></h6>
               </div>
+              <div class="col-md-2 d-none d-md-block border-bottom bloque-experto">
+                <div class="container-fluid">
+                  <div class="row">
+                    
+                    <div class="col-8 ">
+                      <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <a href="" class="font-weight-bold">Leer Más</a>
+                    </div>
+                    <div class="col-4 p-2 mt-3">
+                      <img src="img/nurse-2141808_1920.jpg" alt="" class="" srcset="" height="64" width="64">
+                    </div>
+                   <div class="col-12"><hr></div> 
+                    
+                    <div class="col-8 ">
+                      <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <a href="" class="font-weight-bold">Leer Más</a>
+                    </div>
+                    <div class="col-4 p-2 mt-3">
+                      <img src="img/nurse-2141808_1920.jpg" alt="" class="" srcset="" height="64" width="64">
+                    </div>
+
+                    <div class="col-12"><hr></div>
+                    
+                    <div class="col-8  ">
+                      <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <a href="" class="font-weight-bold">Leer Más</a>
+                    </div>
+                    <div class="col-4 p-2 mt-3">
+                      <img src="img/nurse-2141808_1920.jpg" alt="" class="" srcset="" height="64" width="64">
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
               
                 <!--Buscador-->
-
-              </div>
+                  </div>
+                  
+                </div>
+              
+              
               <!--Hero-->
               
     
@@ -106,7 +179,7 @@
               
               <!--Carousel-->
               <div class="container my-5">
-                <h5 class="my-3">Medicina General</h5>
+                <h5 class="">Medicina General</h5>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner row w-100 mx-auto">
                     <div class="carousel-item col-md-4 active">
@@ -475,11 +548,7 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
+                
                 <div class="modal-body">
                         <h1 class="text-center font-weight-bold my-2">Everyones</h1>
                         <h6 class="text-center mb-3">Ingresa con tus credenciales para administrar tus opciones</h6>
@@ -491,13 +560,54 @@
                             <button class="btn btn-primary my-3 btn-block font-weight-bold">INGRESAR</button>
                             <a href="#"><p class="text-center text-light text">Olvide mi Contraseña</p></a>
                         </div>
-                        <h6 class="text-center">¿Aun no tiene cuenta?</h6>
-                        <a href="#"><h6 class="text-center text-primary" >Registrese aquí.</h6></a>        
+                                
                 </div>
                 
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="modalRegistrate" tabindex="-1" role="dialog" aria-labelledby="modalRegistrate" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              
+              <div class="modal-body">
+                      <h1 class="text-center font-weight-bold my-2">Everyones</h1>
+                      <h6 class="text-center mb-3">Registra una cuenta con Nosotros</h6>
+                      <div class="col-12 form-group bloquedatos py-4">
+                        <div class="row">
+                          <div class="form-group has-feedback col-6">
+                            <i class="fa fa-user form-control-feedback"></i>
+                            <input type="text" class="form-control  espacio-lupa" placeholder="Nombre">
+                          </div>
+                          <div class="form-group  col-6">
+                            <input type="text" class="form-control  " placeholder="Apellido">
+                          </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                          <i class="fa fa-address-card form-control-feedback"></i>
+                          <input type="number" class="form-control  espacio-lupa" placeholder="Documento de Identidad">
+                        </div>
+                        
+                        <div class="form-group has-feedback">
+                          <i class="fa fa-envelope form-control-feedback"></i>
+                          <input type="email" class="form-control  espacio-lupa" placeholder="Correo Electronico">
+                        </div>
+                        <div class="form-group has-feedback">
+                          <i class="fa fa-lock form-control-feedback"></i>
+                          <input type="password" class="form-control  espacio-lupa" placeholder="Contraseña">
+                        </div>
+                        
+                          
+                          <button class="btn btn-primary my-3 btn-block font-weight-bold">REGISTRARTE</button>
+                          
+                      </div>
+                              
+              </div>
+              
+          </div>
+      </div>
+  </div>
 
     <script src="js/jquery.slim.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

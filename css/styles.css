@@ -16,6 +16,17 @@ body{
 .bg-color-4{
      background-color: #f5f7fa;
 }
+.bg-color-fondo{
+  
+  background-image: linear-gradient(
+    rgba(77, 128, 228, 1),
+    rgba(0%, 40%, 70%, 0.5)
+  ), url(../img/chair-2589771_1280.jpg);
+  
+  background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+}
 .mision-bg{
   background-image: url(../img/face-mask-4986596_1280.jpg);
   background-repeat: no-repeat;
@@ -30,11 +41,7 @@ body{
 }
 /*btn personalizados*/
 
-.btn-color-1{color:#fff;background-color:#2e279d;border-color:#2e279d}
-
-
-
-
+.btn-color-1{color:#fff;background-color:#2e279d;border-color:#2e279d;}
 
 
 .btn-outline-color-3{color:#46b3e6;background-color:transparent;
@@ -87,6 +94,19 @@ body{
      padding: 20px;
      width: 15%;
  } */
+/*NAVBAR*/
+.navbar .dropdown-item:hover {
+  
+  background-color: #46b3e6;
+}
+.bloque-experto p, .bloque-experto a{
+  font-size: 0.9rem !important;
+}
+.bloque-experto img{
+  border-radius: 10px;
+}
+/*NAVBAR*/
+
 
  /*Beneficios*/
  .beneficios.container-fluid{
