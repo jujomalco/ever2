@@ -26,6 +26,7 @@ body{
   background-repeat: no-repeat;
     background-position: center center;
     background-size:cover;
+    background-attachment: fixed;
 }
 .mision-bg{
   background-image: url(../img/face-mask-4986596_1280.jpg);
