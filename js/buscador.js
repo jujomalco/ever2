@@ -1,3 +1,4 @@
+//JS Para el buscador
 (function(){ 
     $("#qDesea").on("change", function() {
         $('#qEspecialidad').removeAttr('hidden');

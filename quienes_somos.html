@@ -12,6 +12,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <!--header navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark  bg-color-1 sticky-top">
       <a class="navbar-brand h1 text-light font-weight-bold" href="#">Everyones</a>
@@ -20,88 +21,116 @@
       </button>
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item active ">
-            <a class="nav-link text-light" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <ul class="navbar-nav mx-auto ">
+          
+          <li class="nav-item active">
+            <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group" style="width: 306px;">
+        <input type="text" class="form-control" placeholder="Clinica/Doctor/Especialidad" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-color-2" type="submit">
+            <i class="fa fa-search"></i>Buscar
+          </button>
+        </div>
+      </div>
+    </form>
           </li>
-          <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Especialidades
-                  </a>
-                  <div class="dropdown-menu bg-color-1" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item text-light" href="busqueda.html">Medicina General</a>
-                    <a class="dropdown-item text-light" href="busqueda.html">Cardíologia</a>
-                    <a class="dropdown-item text-light" href="busqueda.html">Oftalmologia</a>
-                    <a class="dropdown-item text-light" href="busqueda.html">Medicina Interna</a>
-                    <a class="dropdown-item text-light" href="busqueda.html">Odontología</a>
-                    <a class="dropdown-item text-light" href="busqueda.html">Pediatría</a>
-                    
-                  </div>
-                </li>
+          
+                
           
           
-          <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-                  <a class="nav-link text-light" href="quienes_somos.html">Quienes Somos</a>
-          </li>
-          <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Contactenos</a>
-          </li>
+         
           
           <li class="nav-item dropdown">
         </ul>
         <div class="form-inline my-2 my-lg-0">
-          
+          <a href="#" class=" text-white px-2" data-toggle="modal" data-target="#modalRegistrate">Registrate</a>
           <button class="btn btn-outline-color-3 my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal">Iniciar Sesión</button>
         </div>
       </div>
     </nav>
       <!--header navbar-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                                <h1 class="text-center font-weight-bold my-2">Everyones</h1>
-                                <h6 class="text-center mb-3">Ingresa con tus credenciales para administrar tus opciones</h6>
-                                <div class="col-12 form-group bloquedatos py-5">
-                                    <label for="usuario" class="text-light">Nombre de Usuario</label>
-                                    <input type="text" name="usuario" id="usuario" class="form-control">
-                                    <label for="contrasena" class="text-light mt-2">Contraseña</label>
-                                    <input type="Contraseña" name="contrasena" id="contrasena" class="form-control">
-                                    <button class="btn btn-primary my-3 btn-block font-weight-bold">INGRESAR</button>
-                                    <a href="#"><p class="text-center text-light text">Olvide mi Contraseña</p></a>
-                                </div>
-                                <h6 class="text-center">¿Aun no tiene cuenta?</h6>
-                                <a href="#"><h6 class="text-center text-primary" >Registrese aquí.</h6></a>        
-                        </div>
-                        
+           <!-- Modal -->
+           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    
+                    <div class="modal-body">
+                            <h1 class="text-center font-weight-bold my-2">Everyones</h1>
+                            <h6 class="text-center mb-3">Ingresa con tus credenciales para administrar tus opciones</h6>
+                            <div class="col-12 form-group bloquedatos py-5">
+                                <label for="usuario" class="text-light">Nombre de Usuario</label>
+                                <input type="text" name="usuario" id="usuario" class="form-control">
+                                <label for="contrasena" class="text-light mt-2">Contraseña</label>
+                                <input type="Contraseña" name="contrasena" id="contrasena" class="form-control">
+                                <button class="btn btn-primary my-3 btn-block font-weight-bold">INGRESAR</button>
+                                <a href="#"><p class="text-center text-light text">Olvide mi Contraseña</p></a>
+                            </div>
+                                    
                     </div>
+                    
                 </div>
             </div>
+          </div>
+          
+          <div class="modal fade" id="modalRegistrate" tabindex="-1" role="dialog" aria-labelledby="modalRegistrate" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  
+                  <div class="modal-body">
+                          <h1 class="text-center font-weight-bold my-2">Everyones</h1>
+                          <h6 class="text-center mb-3">Registra una cuenta con Nosotros</h6>
+                          <div class="col-12 form-group bloquedatos py-4">
+                            <div class="row">
+                              <div class="form-group has-feedback col-6">
+                                <i class="fa fa-user form-control-feedback"></i>
+                                <input type="text" class="form-control  espacio-lupa" placeholder="Nombre">
+                              </div>
+                              <div class="form-group  col-6">
+                                <input type="text" class="form-control  " placeholder="Apellido">
+                              </div>
+                            </div>
+                            <div class="form-group has-feedback">
+                              <i class="fa fa-address-card form-control-feedback"></i>
+                              <input type="number" class="form-control  espacio-lupa" placeholder="Documento de Identidad">
+                            </div>
+                            
+                            <div class="form-group has-feedback">
+                              <i class="fa fa-envelope form-control-feedback"></i>
+                              <input type="email" class="form-control  espacio-lupa" placeholder="Correo Electronico">
+                            </div>
+                            <div class="form-group has-feedback">
+                              <i class="fa fa-lock form-control-feedback"></i>
+                              <input type="password" class="form-control  espacio-lupa" placeholder="Contraseña">
+                            </div>
+                            
+                              
+                              <button class="btn btn-primary my-3 btn-block font-weight-bold">REGISTRARTE</button>
+                              
+                          </div>
+                                  
+                  </div>
+                  
+              </div>
+          </div>
+          </div>
+          <!--Modal-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
 
             <!--welcome-->
             <div class="container-fluid welcome">
@@ -296,23 +325,23 @@
             </div>
             
             <div class="container-fluid my-5 px-5">
-              <div class="row">
+              <div class="row justify-content-center">
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <img src="img/person_5.jpg" class="img-fluid" alt="" srcset="">
                   <h4>Nombre Persona</h4>
                   <h5 style="color:#2e279d;">Cargo</h5>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, saepe! Fuga fugiat quasi enim iste modi in quae, expedita pariatur.</p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <img src="img/person_5.jpg" class="img-fluid" alt="" srcset="">
                   <h4>Nombre Persona</h4>
                   <h5 style="color:#2e279d;">Cargo</h5>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, saepe! Fuga fugiat quasi enim iste modi in quae, expedita pariatur.</p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <img src="img/person_5.jpg" class="img-fluid" alt="" srcset="">
                   <h4>Nombre Persona</h4>
                   <h5 style="color:#2e279d;">Cargo</h5>

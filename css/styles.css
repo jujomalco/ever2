@@ -43,6 +43,7 @@ body{
 /*btn personalizados*/
 
 .btn-color-1{color:#fff;background-color:#2e279d;border-color:#2e279d;}
+.btn-color-2{color:#fff;background-color:#46b3e6;border-color:#46b3e6; border-radius: 0px 5px 5px 0px;}
 
 
 .btn-outline-color-3{color:#46b3e6;background-color:transparent;
@@ -105,6 +106,9 @@ body{
 }
 .bloque-experto img{
   border-radius: 10px;
+}
+#iBusNav{
+  border-radius: 5px 0px 0px 5px
 }
 /*NAVBAR*/
 
@@ -410,4 +414,7 @@ body{
   webkit-transform: scale(1.3);
     transform: scale(1.1);
     
+}
+.likes-p{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
